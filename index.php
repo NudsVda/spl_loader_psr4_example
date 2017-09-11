@@ -2,7 +2,9 @@
 
 include __DIR__.'/vendor/autoload.php';
 
+
 use Nuds\App\Controller\Index;
+use Nuds\App\Controller\NotFound;
 
 $path = $_SERVER['PATH_INFO'];
 
@@ -17,9 +19,16 @@ $routers = [
     '/another' => ['class'=>'Nuds\App\Controller\Another','method'=>'index'],
 ];
 
-$class = $routers[$path]['class'];
-$method = $routers[$path]['method'];
+if($routers[$path])
+{
+    $class = $routers[$path]['class'];
+    $method = $routers[$path]['method'];
+       
+    $class = new $class();
+    return $run = $class->$method();
+}
 
-$class = new $class();
-return $run = $class->$method();
+return (new NotFound())->run();
+
+
 
