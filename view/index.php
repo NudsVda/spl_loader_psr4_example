@@ -1,25 +1,7 @@
 <html>
     <body>
-        <h1>Olá, turma!</h4>        
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Idade</th>
-                </tr>
-            </thead>
-            <tbody>
-            <?php
-                foreach ($pessoas as $p) :
-            ?>
-                    <tr>
-                        <td><?= $p['nome'] ?></td>
-                        <td><?= $p['idade'] ?></td>
-                    </tr>
-            <?php
-                endforeach
-            ?>
-            </tbody>
-        </table>
+        <h1>Welcome to Gambiarra First</h1>
+        <a href="/home">People List</a>
+        <a href="/another">Another Link</a>
     </body>
 </html>
