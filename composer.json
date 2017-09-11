@@ -1,0 +1,19 @@
+{
+    "name": "NUDS autoload with composer",
+    "description": "NUDS autoload",
+    "license": "MIT",
+    "keywords": ["nuds"],
+    "authors": [
+        {
+            "name": "Tiago Heineck",
+            "email": "tiago.heineck@ifc.edu.br"
+        }
+    ],
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Nuds\\App\\": "./src"
+        }
+    }
+}
