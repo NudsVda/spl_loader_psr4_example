@@ -1,12 +1,13 @@
 <?php
 
-include __DIR__.'/vendor/autoload.php';
+include './vendor/autoload.php';
 
 
 use Nuds\App\Controller\Index;
 use Nuds\App\Controller\NotFound;
 
 $path = $_SERVER['PATH_INFO'];
+
 
 if (!$path)
 {

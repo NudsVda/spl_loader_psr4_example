@@ -11,8 +11,8 @@ class Person
     public function getAll() : array
     {
         return [
-            ['name'=>José,'age'=>20],
-            ['name'=>Pedrinho,'age'=>12]
+            ['name'=>'José','age'=>20],
+            ['name'=>'Pedrinho','age'=>12]
         ];
     }
     
