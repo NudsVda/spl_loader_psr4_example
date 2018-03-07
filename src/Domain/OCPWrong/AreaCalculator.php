@@ -6,12 +6,12 @@ use App\Domain\OCPWrong\Rectangule;
 
 class AreaCalculator
 {
-    public function area(Object $shape)
+    public function area(Object $shape) : double
     {
         if ($shape instanceof Rectangule)
         {
             return $shape->getWidth() + $shape->getHeight();
-        }
-        return $shape->getRadius() * $shape->getRadius() * 3,14;
+        }        
+        return $shape->getRadius() * $shape->getRadius() * 3.14;
     }
 }

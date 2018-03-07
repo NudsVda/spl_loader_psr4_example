@@ -6,11 +6,11 @@ use App\Domain\OCP\Shape;
 
 class Circle  extends Shape
 {
-    private $radius
+    private $radius;
 
     public function area() : double
     {
-       return $shape->getRadius() * $shape->getRadius() * 3,14;
+       return $shape->getRadius() * $shape->getRadius() * 3.14;
     }
 
 

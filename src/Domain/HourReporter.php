@@ -13,7 +13,7 @@ class HourReporter {
 
     public function reportHours(Employee $employee)
     {
-        $this->employeeRepository->getHoursByEmployeeCode($employeeRepository->code)
+        $this->employeeRepository->getHoursByEmployeeCode($employeeRepository->code);
     }
 
 }

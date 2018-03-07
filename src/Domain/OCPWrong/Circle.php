@@ -4,7 +4,7 @@ namespace App\Domain\OCPWrong;
 
 class Circle 
 {
-    private $radius
+    private $radius;
 
 
     /**

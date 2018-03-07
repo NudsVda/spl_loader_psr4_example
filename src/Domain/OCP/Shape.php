@@ -4,5 +4,5 @@ namespace App\Domain\OCP;
 
 abstract class Shape
 {
-    public abstract area();
+   abstract public function area();
 }
